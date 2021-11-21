@@ -22,8 +22,8 @@ module Eth
     end
 
     def initialize(priv: nil)
-      @private_key = MoneyTree::PrivateKey.new key: priv
-      @public_key = MoneyTree::PublicKey.new private_key, compressed: false
+      @private_key = PrivateKey.new key: priv
+      @public_key = PublicKey.new private_key, compressed: false
     end
 
     def private_hex

@@ -15,6 +15,10 @@ module Eth
   autoload :Sedes, 'eth/sedes'
   autoload :Tx, 'eth/tx'
   autoload :Utils, 'eth/utils'
+  autoload :MoneyTreeKey, 'eth/money_tree_key'
+  autoload :PublicKey, 'eth/public_key'
+  autoload :PrivateKey, 'eth/private_key'
+  autoload :Support, 'eth/support'
 
   class << self
     def configure
